@@ -1,0 +1,76 @@
+.addToCartContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.quantitySelector {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--medium-gray);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.quantityBtn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--light-gray);
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.quantityBtn:hover {
+  background-color: var(--medium-gray);
+}
+
+.quantity {
+  width: 40px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.addToCartBtn {
+  flex: 1;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.addToCartBtn:hover {
+  background-color: #2c4760;
+}
+
+.addToCartBtn:disabled {
+  background-color: var(--dark-gray);
+  cursor: not-allowed;
+}
+
+.added {
+  background-color: #4caf50;
+}
+
+@media (max-width: 768px) {
+  .addToCartContainer {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .quantitySelector {
+    width: 100%;
+  }
+
+  .addToCartBtn {
+    width: 100%;
+  }
+}

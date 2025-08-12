@@ -1,0 +1,129 @@
+.productCard {
+  background-color: white;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.productCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.productImage {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.productStatus {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.available {
+  background-color: #4caf50;
+  color: white;
+}
+
+.comingSoon {
+  background-color: #ff9800;
+  color: white;
+}
+
+.soldOut {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.productInfo {
+  padding: 1rem;
+}
+
+.productName {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.productName a:hover {
+  color: var(--primary-color);
+}
+
+.productMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.productPrice {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.productRating {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.stars {
+  display: flex;
+}
+
+.star,
+.starFilled {
+  font-size: 0.875rem;
+}
+
+.starFilled {
+  color: var(--secondary-color);
+}
+
+.star {
+  color: var(--medium-gray);
+}
+
+.reviewCount {
+  font-size: 0.75rem;
+  color: var(--dark-gray);
+}
+
+.viewDetailsBtn {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: var(--light-gray);
+  border-radius: var(--border-radius);
+  transition: var(--transition);
+}
+
+.viewDetailsBtn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .productImage {
+    height: 150px;
+  }
+
+  .productInfo {
+    padding: 0.75rem;
+  }
+}
